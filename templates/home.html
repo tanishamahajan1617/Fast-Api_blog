@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>My Blog</title></head>
+<body>
+    <h1>All Posts</h1>
+    <ul>
+        {% for p in posts %}
+            <li>{{ p.title }} - {{ p.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
